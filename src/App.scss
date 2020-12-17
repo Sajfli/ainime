@@ -1,0 +1,17 @@
+@import 'assets/master';
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Alegreya', serif;
+
+    margin: 0; padding: 0;
+
+    background-color: $background;
+    color: $color;
+}

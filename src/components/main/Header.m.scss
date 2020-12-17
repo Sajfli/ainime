@@ -1,0 +1,13 @@
+@import 'assets/master';
+
+.header {
+    width: 100vw;
+    height: 50px;
+
+    background-color: $secondary;
+    color: $accent;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
