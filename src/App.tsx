@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 
 import './App.scss'
 
@@ -8,12 +8,27 @@ import Header from 'components/main/Header'
 // Index view
 import Index from 'views/Index'
 
-const App: FC = () => (
-    <>
-        <Header />
+// main contexts
+import LangContext from 'context/Lang'
 
-        <Index text="Ainime" />
-    </>
-)
+const App: FC = () => {
+
+    // language state
+    const [ lang, setLang ] = useState('en')
+
+    // function for handling language change
+    function handleLanguageChange(value: string) {
+        if(value === 'pl' || value === 'en')
+            setLang(value)
+    }
+
+    return(
+        <LangContext.Provider value={{lang, change: handleLanguageChange}}>
+            <Header />
+
+            <Index text="Ainime" />
+        </LangContext.Provider>
+    )
+}
 
 export default App

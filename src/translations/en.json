@@ -1,0 +1,10 @@
+{
+    "ui": {
+        "hello": "Hello World!",
+
+        "index": "Home",
+        "genres": "Genres",
+        "new": "Recently Added",
+        "popular": "Popular"
+    }
+}

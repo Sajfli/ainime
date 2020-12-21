@@ -1,0 +1,38 @@
+@import 'assets/master';
+
+// Navigation
+
+.nav ul {
+    list-style: none;
+    height: $header_height;
+
+    margin: 0;
+}
+
+.nav li {
+    // display: block;
+
+    float: left;
+    margin: 0 15px;
+
+    font-size: 18px;
+
+    height: inherit;
+    // line-height: inherit;
+
+    // background-color: red;
+
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+
+    transition: color .2s linear;
+}
+
+.link:hover {
+    color: $accent;
+}

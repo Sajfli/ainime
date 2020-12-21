@@ -1,13 +1,36 @@
 @import 'assets/master';
 
+// Header
+
 .header {
     width: 100vw;
-    height: 50px;
+    height: $header_height;
+    line-height: $header_height;
+
+    padding: 0 40px;
 
     background-color: $secondary;
-    color: $accent;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Logo and nav
+.left div, .left nav {
+    float: left;
+}
+
+// Logo
+
+.logo {
+    height: inherit;
+}
+
+.logo h1 {
+    padding: 0; margin: 0;
 }

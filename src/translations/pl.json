@@ -1,0 +1,10 @@
+{
+    "ui": {
+        "hello": "Witaj Świecie!",
+
+        "index": "Strona Główna",
+        "genres": "Gatunki",
+        "new": "Nowe",
+        "popular": "Popularne"
+    }
+}
