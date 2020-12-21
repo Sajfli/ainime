@@ -12,6 +12,11 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "build"),
         filename: 'bundle.js',
+        publicPath: '/',
+    },
+
+    devServer: {
+      historyApiFallback: true,
     },
 
     resolve: {
@@ -22,7 +27,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, "src", "public", "index.html"),
+            template: path.resolve(__dirname, "src", "public", "index.html")
         }),
 
         new MiniCssExtractPlugin()

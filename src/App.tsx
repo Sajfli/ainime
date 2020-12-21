@@ -6,7 +6,10 @@ import './App.scss'
 import Header from 'components/main/Header'
 
 // Index view
-import Index from 'views/Index'
+// import Index from 'views/Index'
+
+// Router
+import Router from 'routing/Router'
 
 // main contexts
 import LangContext from 'context/Lang'
@@ -26,7 +29,10 @@ const App: FC = () => {
         <LangContext.Provider value={{lang, change: handleLanguageChange}}>
             <Header />
 
-            <Index text="Ainime" />
+            <div className='page'>
+                <Router />
+            </div>
+
         </LangContext.Provider>
     )
 }

@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import { Link } from 'react-router-dom'
 
 import useTranslation from 'hooks/useTranslation'
 
@@ -30,7 +31,7 @@ const Navigation:FC = () => {
                 {
                     elements.map(({title, url}) => (
                         <li key={title}>
-                            <a className={style.link} href={url}>{t(title)}</a>
+                            <Link className={style.link} to={url}>{t(title)}</Link>
                         </li>
                     ))
                 }
