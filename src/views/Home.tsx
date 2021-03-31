@@ -6,7 +6,7 @@ type Props = {
     text: string;
 }
 
-const Index: FC<Props> = ({text}: Props) => {
+const Home: FC<Props> = ({text}: Props) => {
 
     const t = useTranslation()
 
@@ -16,4 +16,4 @@ const Index: FC<Props> = ({text}: Props) => {
     </h1>
 }
 
-export default Index
+export default Home

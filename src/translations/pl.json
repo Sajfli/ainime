@@ -5,6 +5,8 @@
         "index": "Strona Główna",
         "genres": "Gatunki",
         "new": "Nowe",
-        "popular": "Popularne"
+        "popular": "Popularne",
+
+        "login": "Zaloguj się"
     }
 }

@@ -15,12 +15,15 @@
 
         "esModuleInterop": true,
 
-        "baseUrl": "./src",
+        "baseUrl": "src",
+        "paths": {
+            "src/*": ["./src/*"]
+        },
 
         "plugins": [{"name": "typescript-plugin-css-modules"}]
     },
     "include": [
-        "src/index.tsx",
-        "types/"
+        "src/**/*",
+        "src/types"
     ]
 }

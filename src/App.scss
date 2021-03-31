@@ -1,6 +1,6 @@
 @import 'assets/master';
 
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,15 +8,17 @@
 
 body {
 
-    font-family: 'Alegreya', serif;
+    font-family: 'Roboto', sans-serif;
 
     margin: 0; padding: 0;
 
     background-color: $background;
     color: $color;
+
+    margin-top: $header_height + 40;
 }
 
 div.page {
     width: 100%;
-    min-height: calc(100vh  - #{$header_height});
+    min-height: calc(100vh  - #{$header_height + 40});
 }

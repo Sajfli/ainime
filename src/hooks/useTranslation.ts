@@ -36,6 +36,8 @@ function useTranslation(): (value: string, type?: string) => string {
 
         try {
             string = translations[type][val]
+
+            if(!string) throw Error('no_text')
         } catch(e) {
             // if err then return 'null'
             string = 'null'

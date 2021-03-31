@@ -1,5 +1,30 @@
 @import 'assets/master';
 
+$nav_font_size: 18px;
+
+// Common
+.btn {
+    background-color: transparent;
+    color: $color;
+    outline: none;
+    border: none;
+    font-size: $nav_font_size;
+
+    transition: color .2s linear;
+
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: $accent;
+}
+
+.btn:focus {
+    background-color: rgba(200, 200, 200, .1);
+}
+
+
 // Header
 
 .header {
@@ -7,13 +32,12 @@
     height: $header_height;
     line-height: $header_height;
 
+    position: fixed;
+    left: 0; top: 0;
+
     padding: 0 40px;
 
     background-color: $secondary;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     display: flex;
     justify-content: space-between;
@@ -29,8 +53,37 @@
 
 .logo {
     height: inherit;
+
+    line-height: 1;
 }
 
 .logo h1 {
     padding: 0; margin: 0;
+    font-size: 28px;
+}
+
+// Navigation
+
+.nav ul {
+    list-style: none;
+    height: $header_height;
+
+    margin: 0;
+}
+
+.nav li {
+    // display: block;
+
+    float: left;
+    margin: 0 15px;
+
+    font-size: $nav_font_size;
+
+    height: inherit;
+    // line-height: inherit;
+
+    // background-color: red;
+
+    display: flex;
+    align-items: center;
 }

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import useTranslation from 'hooks/useTranslation'
 
-import style from './Navigation.m.scss'
+import style from './Header.m.scss'
 
 const Navigation:FC = () => {
 

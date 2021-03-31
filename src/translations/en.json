@@ -5,6 +5,8 @@
         "index": "Home",
         "genres": "Genres",
         "new": "Recently Added",
-        "popular": "Popular"
+        "popular": "Popular",
+
+        "login": "Sign In"
     }
 }
